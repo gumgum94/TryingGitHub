@@ -1,0 +1,12 @@
+cmd
+diskpart
+list disk
+select disk 1
+list partition
+clean
+list partition
+create partition primary
+list partition
+format fs=fat32 quick
+list partition
+exit
